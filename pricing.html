@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CX Community Africa - Pricing.</title>
+    <meta
+      name="title"
+      content="CX COMMUNITY AFRICA is a learning, informative and collaborative online community for Customer experience personnel, HR, Client Management, UX designers, Business Owners and Hospitality managers across Africa."
+    />
+
+    <!-- Social Tags -->
+    <meta
+      name="keywords"
+      content="customer experience, learning, client Management,training, CX Community Africa"
+    />
+    <meta
+      name="description"
+      content="CX COMMUNITY AFRICA is a learning, informative and collaborative online community for Customer experience personnel, HR, Client Management, UX designers, Business Owners and Hospitality managers across Africa."
+    />
+
+    <meta name="theme-color" content="#7933B1" />
+
+    <!-- Favicons -->
+    <link
+      rel="shortcut icon"
+      href="assets/icons/cx_logo.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/favicon.png"
+      sizes="32x32"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/images/favicon-144x144.png"
+    />
+    <meta name="msapplication-TileColor" content="#7933B1" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Alert starts -->
+    <div
+      class="text-center bg-alert alert alert-dismissible fade show d-none d-sm-block"
+      style="margin-bottom: 0px"
+      role="alert"
+    >
+      Join Us at Our Monthly Meet Up starting April 23-28, 2023
+      <button class="btn_primary mx-3"><a href="#"></a>Register</button>
+
+      <button
+        type="button"
+        class="btn-close pt-4"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+    <!-- Alert ends -->
+
+    <!-- Navbar starts -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="assets/images/cx_logo.svg" alt="CX Community Logo" />
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class=""><img src="img/menu_icon.png" alt="" /></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resources</a>
+            </li>
+          </ul>
+          <div
+            class="d-md-flex flex-md-row align-items-md-center d-flex flex-column"
+          >
+            <div>
+              <img
+                src="assets/images/light_mode_toggle.svg"
+                id="light_mode_toggle"
+                alt="icon for light mode"
+              />
+            </div>
+            <div>
+              <select name="lang" id="lang" class="border-0 ms-2">
+                <option value="eng">ENG</option>
+                <option value="frn">FRC</option>
+              </select>
+            </div>
+            <div>
+              <a href="/login.html">
+                <button class="btn_outline ms-2">Log in</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Pricing banner starts -->
+    <div class="banner">
+      <div class="container">
+        <div class="banner_content d-md-flex flex-column text-white">
+          <h1 class="head_1">Pricing</h1>
+          <div class="d-inline-flex font_large">
+            <a href="/" class="text-decoration-none text-white">Home</a>
+            <p class="mx-1">/</p>
+            <a href="#" class="text-decoration-none text-white">Pricing</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pricing banner ends -->
+
+    <!-- Pricing heading starts -->
+    <div class="container">
+      <div class="heading_content text-center mx-auto pt-4">
+        <h3 class="mb-3 black-text-6">
+          Become a paid member with premium benefit
+        </h3>
+        <img
+          id="price_sub"
+          src="assets/icons/monthly_toggle.svg"
+          alt="button toggle
+          for monthly and yearly payment"
+          onclick="changeScr()"
+        />
+      </div>
+      <div class="text-end my-4">
+        <select
+          name="currency"
+          id="currency"
+          class="currency_dropdown border-0"
+        >
+          <option value="usd">$USD</option>
+          <option value="ngn">₦NGN</option>
+          <option value="ced">¢CED</option>
+        </select>
+      </div>
+    </div>
+    <!-- Pricing heeading ends -->
+
+    <!-- Pricing card starts -->
+    <div class="container pb-5">
+      <div class="justify-content-center pricing_plan">
+        <div class="col-lg-4 rounded-1" style="border: 1px solid #e5e5e5">
+          <div
+            class="text-center font_normal black-text-6 fw-bold py-2 rounded-top-1"
+            style="background: #e4d6ef"
+          >
+            Full Access Plan
+          </div>
+          <div class="card-body px-3">
+            <div class="d-flex py-2 align-items-center" id="price_details_1.1">
+              <div>
+                <h3 class="m-0 head_3 black-text-6">$21.30</h3>
+              </div>
+              <div class="ms-2">
+                <p class="font_smaller black-text-4 m-0">per user/month</p>
+                <p class="font_smaller black-text-4 m-0">billed monthly</p>
+              </div>
+            </div>
+
+            <div
+              class="d-flex py-2 align-items-center hide_on_load"
+              id="price_details_1.2"
+            >
+              <div>
+                <h3 class="m-0 head_3 black-text-6">$19.17</h3>
+              </div>
+              <div class="ms-2">
+                <p class="font_smaller black-text-4 m-0">per user/month</p>
+                <p class="font_smaller black-text-4 m-0">
+                  billed at <s style="color: #7933b1">$255.60</s>
+                  <s class="fw-bold">$230.04/yr</s>
+                </p>
+              </div>
+            </div>
+            <div>
+              <p class="mb-3 content_pricing font_normal black-text-6">
+                Best for people who need enhanced features in thier customer
+                experience journey.
+              </p>
+            </div>
+
+            <p class="fw-bold font_normal" style="color: #7933b1">
+              Features included
+            </p>
+            <div class="features font_normal black-text-5">
+              <div class="d-flex">
+                <div>
+                  <img
+                    src="assets/icons/checked_circle.svg"
+                    alt="checked icon"
+                    class="checked_icon"
+                  />
+                </div>
+                <div class="featrues_text">
+                  <p class="ms-2">
+                    24/7 hrs access to a closed and private platform for
+                    support, discussions and infromation
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div>
+                  <img
+                    src="assets/icons/checked_circle.svg"
+                    alt="checked icon"
+                    class="checked_icon"
+                  />
+                </div>
+                <div class="featrues_text">
+                  <p class="ms-2">
+                    Weekly dose from our founder
+                    <em>-The CX Morning fuel by Tobi-</em>
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div>
+                  <img
+                    src="assets/icons/checked_circle.svg"
+                    alt="checked icon"
+                    class="checked_icon"
+                  />
+                </div>
+                <div class="featrues_text">
+                  <p class="ms-2">Personalised and tailored services</p>
+                </div>
+              </div>
+
+              <div class="d-flex">
+                <div>
+                  <img
+                    src="assets/icons/checked_circle.svg"
+                    alt="checked icon"
+                    class="checked_icon"
+                  />
+                </div>
+                <div class="featrues_text">
+                  <p class="ms-2">
+                    Functional CX tools deposited to your mailbox monthly
+                  </p>
+                </div>
+              </div>
+
+              <div class="d-flex">
+                <div>
+                  <img
+                    src="assets/icons/checked_circle.svg"
+                    alt="checked icon"
+                    class="checked_icon"
+                  />
+                </div>
+                <div class="featrues_text">
+                  <p class="ms-2">
+                    Free access to networking events and conferences
+                  </p>
+                </div>
+              </div>
+
+              <div class="d-grid py-3">
+                <a href="register.html" class="btn_primary"> Buy Plan </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 rounded-1" style="border: 1px solid #e5e5e5">
+          <div
+            class="text-center font_normal black-text-6 fw-bold py-2 rounded-top-1"
+            style="background: #e4d6ef"
+          >
+            Sponsorship Plan
+          </div>
+          <div class="card-body px-3">
+            <div class="d-flex py-2 align-items-center" id="price_details_2.1">
+              <div>
+                <h3 class="m-0 head_3 black-text-6" id="monthly">$21.30</h3>
+              </div>
+              <div class="ms-2">
+                <p class="font_smaller black-text-4 m-0">per user/month</p>
+                <p class="font_smaller black-text-4 m-0">billed monthly</p>
+              </div>
+            </div>
+            <div
+              class="d-flex py-2 align-items-center hide_on_load"
+              id="price_details_2.2"
+            >
+              <div>
+                <h3 class="m-0 head_3 black-text-6" id="yearly">$19.17</h3>
+              </div>
+              <div class="ms-2">
+                <p class="font_smaller black-text-4 m-0">
+                  per 1 employee/month
+                </p>
+                <p class="font_smaller black-text-4 m-0">
+                  billed at <s style="color: #7933b1">$255.60</s>
+                  <s class="fw-bold">$230.04/yr</s>
+                </p>
+              </div>
+            </div>
+            <div>
+              <p class="font_normal black-text-6">
+                Uniquely created for businesses who prefer their employees to
+                represent them and infuse their experience with the community
+                back to their business. As a sponsor we would update you on the
+                progress of your employees / benefactor at every touchpoint.
+              </p>
+            </div>
+
+            <p class="fw-bold font_normal" style="color: #7933b1">
+              Features included
+            </p>
+            <div class="features font_normal black-text-5">
+              <div class="d-flex">
+                <div>
+                  <img
+                    src="assets/icons/checked_circle.svg"
+                    alt="checked icon"
+                    class="checked_icon"
+                  />
+                </div>
+                <div class="featrues_text">
+                  <p class="ms-2">
+                    24/7 hrs access to a closed and private platform for
+                    support, discussions and infromation
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div>
+                  <img
+                    src="assets/icons/checked_circle.svg"
+                    alt="checked icon"
+                    class="checked_icon"
+                  />
+                </div>
+                <div class="featrues_text">
+                  <p class="ms-2">
+                    Weekly dose from our founder
+                    <em>-The CX Morning fuel by Tobi-</em>
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div>
+                  <img
+                    src="assets/icons/checked_circle.svg"
+                    alt="checked icon"
+                    class="checked_icon"
+                  />
+                </div>
+                <div class="featrues_text">
+                  <p class="ms-2">Personalised and tailored services</p>
+                </div>
+              </div>
+
+              <div class="d-flex">
+                <div>
+                  <img
+                    src="assets/icons/checked_circle.svg"
+                    alt="checked icon"
+                    class="checked_icon"
+                  />
+                </div>
+                <div class="featrues_text">
+                  <p class="ms-2">
+                    Functional CX tools deposited to your mailbox monthly
+                  </p>
+                </div>
+              </div>
+
+              <div class="d-flex">
+                <div>
+                  <img
+                    src="assets/icons/checked_circle.svg"
+                    alt="checked icon"
+                    class="checked_icon"
+                  />
+                </div>
+                <div class="featrues_text">
+                  <p class="ms-2">
+                    Free access to networking events and conferences
+                  </p>
+                </div>
+              </div>
+
+              <div class="d-grid py-3">
+                <a href="register_spons.html" class="btn_primary"> Buy Plan </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pricing card ends -->
+
+    <!-- FAQ section starts -->
+    <div class="container p-5">
+      <div class="faq">
+        <div>
+          <h4 class="faq_heading head_4">FAQs</h4>
+        </div>
+        <div class="accordion-wrapper w-100">
+          <div class="accordion">
+            <input
+              type="checkbox"
+              name="faq1"
+              id="check1"
+              checked
+              class="faq_input"
+            />
+            <label class="accordion-label" for="check1">What is CX?</label>
+            <div class="accordion-content">
+              <p>CX means Customer Experience</p>
+            </div>
+          </div>
+          <div class="accordion">
+            <input type="checkbox" name="faq2" id="check2" class="faq_input" />
+            <label class="accordion-label fs-6" for="check2"
+              >Is this community free?</label
+            >
+            <div class="accordion-content">
+              <p>
+                To subscribe to our community all you have to do is join our
+                mailing list. If you would like to get exclusive benefits, we
+                have a paid plan. See our pricing page
+                <a href="/pricing.html">here</a> for further details.
+              </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <input type="checkbox" name="faq3" id="check3" class="faq_input" />
+            <label class="accordion-label fs-6" for="check3"
+              >Who is this community for?</label
+            >
+            <div class="accordion-content">
+              <p>
+                If you are fully employed, run a business, starting from
+                scratch, or you are being sponsored/sponsoring an employee in
+                your organisation, this is for you.
+              </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <input type="checkbox" name="faq4" id="check4" class="faq_input" />
+            <label class="accordion-label fs-6" for="check4"
+              >Can my fee be refunded after making payment?</label
+            >
+            <div class="accordion-content">
+              <p>
+                We do not refund payments already made. However, you can cancel
+                your subscription before the next billing date.
+              </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <input type="checkbox" name="faq5" id="check5" class="faq_input" />
+            <label class="accordion-label fs-6" for="check5"
+              >How can I upgrade from a regular subscriber to an exclusive
+              member?</label
+            >
+            <div class="accordion-content">
+              <p>
+                To upgrade to an exclusive member, you would need to login to
+                your account then proceed to click on the upgrade button and
+                follow the instructions given.
+              </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <input type="checkbox" name="faq6" id="check6" class="faq_input" />
+            <label class="accordion-label fs-6" for="check6"
+              >How to cancel my subscription?</label
+            >
+            <div class="accordion-content">
+              <p>
+                Our payment platform i.e Paystack sends a payment reminder some
+                days before your next billing date. At the bottom of this
+                reminder, there is a button that says cancel subscription. You
+                can click on it to cancel your subscription
+              </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <input type="checkbox" name="faq7" id="check7" class="faq_input" />
+            <label class="accordion-label fs-6" for="check7"
+              >Can my employer pay and sponsor me?</label
+            >
+            <div class="accordion-content">
+              <p>
+                Some of our members receive sponsorship to join from their
+                employer as part of their employer’s commitment to employee
+                personal development.
+                <br />
+                <br />
+                Wondering how to convince your employer? Here is a downloadable
+                Membership Benefits Information Proposal to share with your
+                employer. We can also back you up with a reference email
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--FAQ section ends  -->
+
+    <!-- Footer Starts -->
+    <footer style="background: #2a2a2a">
+      <div class="container pt-3 text-white">
+        <div class="row mt-5">
+          <div class="col-lg-4">
+            <img
+              src="assets/images/cx_logo.svg"
+              alt="CX community logo"
+              class="pb-3"
+            />
+            <p>
+              Every business success is measured by customer value and the
+              experience at every touch point from discovery to delivery.
+            </p>
+            <div class="d-flex">
+              <img
+                src="assets/icons/footer/Facebook.svg"
+                alt="facebook icon"
+                class="me-3"
+              />
+              <img
+                src="assets/icons/footer/Twitter.svg"
+                alt="twitter icon"
+                class="me-3"
+              />
+              <img
+                src="assets/icons/footer/Youtube.svg"
+                alt="youtube icon"
+                class="me-3"
+              />
+              <img
+                src="assets/icons/footer/Instagram.svg"
+                alt="instagram icon"
+                class="me-3"
+              />
+            </div>
+          </div>
+          <div class="col-lg-2 footer_nav">
+            <p class="fw-bold">Navigations</p>
+            <div class="d-flex flex-column">
+              <a href="" class="text-decoration-none text-white">About</a>
+              <a href="/pricing.html" class="text-decoration-none text-white"
+                >Pricing</a
+              >
+              <a href="" class="text-decoration-none text-white">Events</a>
+              <a href="" class="text-decoration-none text-white">Resources</a>
+            </div>
+          </div>
+          <div class="col-lg-3 more_links">
+            <p class="fw-bold">More Links</p>
+            <div class="d-flex flex-column">
+              <a href="" class="text-decoration-none text-white"
+                >Join Community</a
+              >
+              <a href="" class="text-decoration-none text-white">FAQs</a>
+              <a href="" class="text-decoration-none text-white"
+                >Privacy Policy</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 contacts">
+            <p class="fw-bold">Contacts</p>
+            <div class="d-flex flex-column">
+              <a href="" class="text-decoration-none text-white"
+                >Block 5, Admiralty way, Lekki Phase 1, Lagos, Nigeria</a
+              >
+              <a href="" class="text-decoration-none text-white"
+                >+234 706 4879 348</a
+              >
+              <a href="" class="text-decoration-none text-white"
+                >cxcommunityafrica@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+        <p class="text-center m-0 py-3" style="font-size: 16px">
+          2023 © All rights reserved by CX Community Africa
+        </p>
+      </div>
+    </footer>
+    <!-- Footer ends -->
+  </body>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/fontawesome.min.js"></script>
+  <script src="assets/js/pricing.js"></script>
+</html>

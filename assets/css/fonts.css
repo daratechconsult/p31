@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+
+p,
+label,
+a,
+button,
+li,
+span,
+nav,
+select {
+  font-family: "Inter", sans-serif;
+}
+em {
+  font-weight: 500;
+}
+
+footer a {
+  margin-bottom: 1rem;
+}
+
+input {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #606060;
+}
+
+/* Font sizes and line heights */
+.font_smaller {
+  font-size: 0.75rem;
+  line-height: 16px;
+}
+.font_small {
+  font-size: 0.875rem;
+  line-height: 21px;
+}
+.font_normal {
+  font-size: 1rem;
+  line-height: 24px;
+}
+.font_medium {
+  font-size: 14px;
+  line-height: 27px;
+}
+.font_large {
+  font-size: 1.25rem;
+  line-height: 30px;
+}
+
+.alert_p{
+  color: #2A2A2A;
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.head_1 {
+  font-size: 3.5rem;
+  line-height: 70px;
+}
+.head_2 {
+  font-size: 3rem;
+  line-height: 60px;
+}
+.head_3 {
+  font-size: 2.5rem;
+  line-height: 50px;
+}
+.head_4 {
+  font-size: 1.8rem;
+  line-height: 40px;
+}
+.head_5 {
+  font-size: 1.5rem;
+  line-height: 30px;
+}
+.head_6 {
+  font-size: 1.25rem;
+  line-height: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .font_small {
+    font-size: 0.75rem;
+    line-height: 16px;
+  }
+  .font_normal {
+    font-size: 0.875rem;
+    line-height: 21px;
+  }
+  .font_medium {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .font_large {
+    font-size: 1.125rem;
+    line-height: 26px;
+  }
+
+  .head_1 {
+    font-size: 3rem;
+    line-height: 60px;
+  }
+  .head_2 {
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+  .head_3 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  .head_4 {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+  .head_5 {
+    font-size: 1.25rem;
+    line-height: 25px;
+  }
+  .head_6 {
+    font-size: 1.25rem;
+    line-height: 25px;
+  }
+}

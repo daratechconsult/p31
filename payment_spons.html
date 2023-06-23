@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CX Community Africa - Payment.</title>
+    <meta
+      name="title"
+      content="CX COMMUNITY AFRICA is a learning, informative and collaborative online community for Customer experience personnel, HR, Client Management, UX designers, Business Owners and Hospitality managers across Africa."
+    />
+
+    <!-- Social Tags -->
+    <meta
+      name="keywords"
+      content="customer experience, learning, client Management,training, CX Community Africa"
+    />
+    <meta
+      name="description"
+      content="CX COMMUNITY AFRICA is a learning, informative and collaborative online community for Customer experience personnel, HR, Client Management, UX designers, Business Owners and Hospitality managers across Africa."
+    />
+
+    <meta name="theme-color" content="#7933B1" />
+
+    <!-- Favicons -->
+    <link
+      rel="shortcut icon"
+      href="assets/icons/cx_logo.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/favicon.png"
+      sizes="32x32"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/images/favicon-144x144.png"
+    />
+    <meta name="msapplication-TileColor" content="#7933B1" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Register Container -->
+    <div class="box full_height">
+      <!-- Left section: image part -->
+      <div
+        class="left-box d-md-flex flex-column justify-content-between d-none"
+      >
+        <div class="img_content text-white w-75 mx-auto my-5">
+          <h3 class="pt-5">
+            Start your journey of<br />
+            Customer Experience with<br />
+            us
+          </h3>
+          <p class="">
+            Every business success is measured by Customer value and the
+            experience at every touch point from discovery to delivery.
+          </p>
+        </div>
+      </div>
+      <!-- Right section: Forms -->
+      <div class="right-box text-md-center p-4">
+        <div>
+          <img
+            src="assets/images/cx_logo.svg"
+            class="mt-md-5"
+            alt="cx community logo"
+          />
+        </div>
+
+        <div class="form-container mx-auto">
+          <div class="d-flex justify-content-end mt-3">
+            <a href="register.html" class="me-2"
+              ><img
+                src="assets/icons/icon_grey_1.svg"
+                alt="icon to naviagate page"
+            /></a>
+            <a href="#" class="me-2"
+              ><img
+                src="assets/icons/icon_green_2.svg"
+                alt="icon to naviagate page"
+            /></a>
+            <a href="/paystack.html" class="me-2"
+              ><img
+                src="assets/icons/icon_grey_3.svg"
+                alt="icon to naviagate page"
+            /></a>
+            <a href="/congrat.html"
+              ><img
+                src="assets/icons/icon_grey_4.svg"
+                alt="icon to naviagate page"
+            /></a>
+          </div>
+
+          <!-- Payment Schedule -->
+          <div class="text-start mt-3">
+            <h5 class="fw-bold head_5 my-3">Payment Schedule</h5>
+            <div class="yearly_payment p-2 mb-2" id="year" onclick="changeBg()">
+              <div class="d-flex fw-bold justify-content-between my-2">
+                <h6 class="head_6">Payment Yearly</h6>
+                <h6 class="head_6" id="payPerYear">$230.04</h6>
+              </div>
+              <p class="percentage_saved m-0">Save 10%</p>
+              <div
+                class="d-flex justify-content-between font_normal grey_text_2 mt-3"
+              >
+                <p class="m-0" id="amount_per_user">$19.17 per user / month</p>
+                <p class="m-0 text-end">
+                  total yearly for <span id="userPerYear">1</span> user(s)
+                </p>
+              </div>
+            </div>
+            <div class="monthly_payment p-2" id="month" onclick="changeBg()">
+              <div class="d-flex fw-bold justify-content-between my-2">
+                <h6 class="head_6">Payment Monthly</h6>
+                <h6 class="head_6" id="payPerMonth">$21.30</h6>
+              </div>
+              <div
+                class="d-flex justify-content-between font_normal grey_text_2"
+              >
+                <p class="m-0 amount_per_user">$21.30 per user / month</p>
+                <p class="m-0 text-end" id="duration_per_user_monthly">
+                  total per month for <span id="userPerMonth">1</span> user(s)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Payment Details -->
+          <div class="text-start mt-4">
+            <h5 class="fw-bold head_5 black-text-6">Payment Details</h5>
+            <div class="d-flex justify-content-between">
+              <div class="form-check d-flex align-items-center mb-3">
+                <input
+                  class="form-check-input me-2"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                />
+                <label class="form-check-label" for="flexRadioDefault1"
+                  ><img
+                    src="img/paystack_icon.png"
+                    alt="paystack icon"
+                    style="width: 16px; height: 16px"
+                  />
+                  Paystack</label
+                >
+              </div>
+
+              <div>
+                <p class="m-0 font_normal">
+                  Sponsoring
+                  <select name="users" id="users">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                  user(s) / month
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Purchase summary -->
+          <div class="text-start my-2">
+            <h5 class="fw-bold head_5 black-text-6">Purchase Summary</h5>
+            <p class="font_normal">
+              Billed in
+              <select
+                name="price"
+                id="price"
+                class="black-text-4 font_normal border-0"
+              >
+                <option value="usd">$USD</option>
+                <option value="ngn">#NGN</option>
+              </select>
+            </p>
+          </div>
+          <!-- Payment Breakdown -->
+          <div class="payment_breakdown text-start" id="yearly_breakdown">
+            <div
+              class="d-flex justify-content-between fw-bold font_medium my-2"
+            >
+              <p class="m-0">Sponsorship plan</p>
+              <p class="m-0" id="priceWithoutDiscount">$255.60</p>
+            </div>
+            <div class="d-flex justify-content-between font_normal my-2">
+              <p class="m-0" id="user">
+                <span id="userFullPrice">1</span> user(s)
+              </p>
+              <p class="m-0" id="duration">Per year</p>
+            </div>
+            <div
+              class="d-flex justify-content-between font_medium fw-bold mt-2"
+            >
+              <p class="m-0">Discounts</p>
+              <p class="m-0" id="discount_amount">-$25.56</p>
+            </div>
+            <div>
+              <p class="m-0 font_normal" id="discount_percentage">10% off</p>
+            </div>
+            <div
+              class="d-flex justify-content-between font_medium fw-bold mt-2"
+            >
+              <p class="m-0" id="tax">Tax</p>
+              <p class="m-0" id="tax_amount">$0.00</p>
+            </div>
+            <div class="text-end font_normal">
+              <p class="m-0" id="payment_type">per year</p>
+            </div>
+            <div class="border-1 border-bottom my-3"></div>
+
+            <div class="d-flex justify-content-between fw-bold">
+              <h5 class="m-0 head_5" id="total">Total</h5>
+              <p class="m-0 font_medium" id="total_price">$230.04</p>
+            </div>
+            <div class="text-end mb-4 font_normal">
+              <p class="m-0" id="payment_type">per year</p>
+            </div>
+          </div>
+
+          <div
+            class="payment_breakdown text-start"
+            id="monthly_breakdown"
+            style="display: none"
+          >
+            <div
+              class="d-flex justify-content-between fw-bold font_medium my-2"
+            >
+              <p class="m-0">Sponsorship plan</p>
+              <p class="m-0" id="monthly_price">$21.30</p>
+            </div>
+            <div class="d-flex justify-content-between font_normal my-2">
+              <p class="m-0" id="user">
+                <span id="userFullPriceMonthly">1</span> user(s)
+              </p>
+              <p class="m-0" id="duration">Per month</p>
+            </div>
+            <div
+              class="d-flex justify-content-between font_medium fw-bold mt-2"
+            >
+              <p class="m-0">Discounts</p>
+              <p class="m-0" id="discount_amount">-$0.00</p>
+            </div>
+            <div>
+              <p class="m-0 font_normal" id="discount_percentage">0% off</p>
+            </div>
+            <div
+              class="d-flex justify-content-between font_medium fw-bold mt-2"
+            >
+              <p class="m-0" id="tax">Tax</p>
+              <p class="m-0" id="tax_amount">$0.00</p>
+            </div>
+            <div class="text-end font_normal">
+              <p class="m-0" id="payment_type">per month</p>
+            </div>
+            <div class="border-1 border-bottom my-3"></div>
+
+            <div class="d-flex justify-content-between fw-bold">
+              <h5 class="m-0 head_5" id="total">Total</h5>
+              <p class="m-0 font_medium" id="total_price_monthly">$21.30</p>
+            </div>
+            <div class="text-end mb-4 font_normal">
+              <p class="m-0" id="payment_type">per year</p>
+            </div>
+          </div>
+
+          <!-- Check T&C -->
+          <div class="form-check d-flex my-3 check_tc">
+            <div>
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="term_condition"
+              />
+            </div>
+            <label
+              class="form-check-label text-start font_small ms-2"
+              for="term_condition"
+            >
+              By selecting “Buy Now”. I authorize CX Community to charge my
+              payment method on Mar 16, 2024 and yearly. I can cancel my
+              subscription by logging into my account to change subscription
+              type. I agree to this
+              <a
+                href="#"
+                class="text-decoration-none font_small fw-bold black-text-6"
+                >term and condition.</a
+              >
+            </label>
+          </div>
+          <div class="text-start my-4">
+            <a href="/paystack_spons.html"
+              ><button class="btn_primary buynow_cta">Buy Now</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="assets/js/payment_spons.js"></script>
+</html>

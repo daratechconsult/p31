@@ -1,0 +1,61 @@
+.event_hero {
+  background-image: url("/assets/images/event/event_hero.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80%;
+}
+.all_events:after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 8%;
+  border: 1px solid #7933b1;
+  text-align: start;
+  margin: 10px 0 24px 0;
+}
+.past_events:after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 8%;
+  border: 1px solid #ffffff;
+  text-align: center;
+  margin: 10px auto 24px auto;
+}
+.event_card {
+  width: 22.3rem;
+  margin-inline: auto;
+  background: #fafafa;
+  box-shadow: 0px 4px 8px rgba(121, 51, 177, 0.15);
+  border-radius: 10px;
+}
+.card {
+  position: relative;
+}
+.card .triangle_event {
+  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-right-radius: 10px;
+}
+.card .triangle_text {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  color: #fdfdfd;
+}
+.cx_mentor {
+  position: relative;
+}
+.corner_img {
+  position: absolute;
+  bottom: -120px;
+  z-index: -1;
+}
+.corner_curve {
+  position: absolute;
+  bottom: -170px;
+  z-index: -1;
+}

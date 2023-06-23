@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CX Community Africa - User Dashboard.</title>
+    <meta
+      name="title"
+      content="CX COMMUNITY AFRICA is a learning, informative and collaborative online community for Customer experience personnel, HR, Client Management, UX designers, Business Owners and Hospitality managers across Africa."
+    />
+
+    <!-- Social Tags -->
+    <meta
+      name="keywords"
+      content="customer experience, learning, client Management,training, CX Community Africa"
+    />
+    <meta
+      name="description"
+      content="CX COMMUNITY AFRICA is a learning, informative and collaborative online community for Customer experience personnel, HR, Client Management, UX designers, Business Owners and Hospitality managers across Africa."
+    />
+
+    <meta name="theme-color" content="#7933B1" />
+
+    <!-- Favicons -->
+    <link
+      rel="shortcut icon"
+      href="assets/icons/cx_logo.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/favicon.png"
+      sizes="32x32"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/images/favicon-144x144.png"
+    />
+    <meta name="msapplication-TileColor" content="#7933B1" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Alert starts -->
+    <div
+      class="text-center bg-alert alert alert-dismissible fade show d-none d-sm-block"
+      style="margin-bottom: 0px"
+      role="alert"
+    >
+      Join Us at Our Monthly Meet Up starting April 23-28, 2023
+      <button class="btn_primary mx-3"><a href="#"></a>Register</button>
+
+      <button
+        type="button"
+        class="btn-close pt-4"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+    <!-- Alert ends -->
+
+    <!-- Navbar starts -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="assets/images/cx_logo.svg" alt="CX Community Logo" />
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class=""><img src="img/menu_icon.png" alt="" /></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resources</a>
+            </li>
+          </ul>
+          <div
+            class="d-md-flex flex-md-row align-items-md-center d-flex flex-column"
+          >
+            <div>
+              <img
+                src="assets/images/light_mode_toggle.svg"
+                id="light_mode_toggle"
+                alt="icon for light mode"
+              />
+            </div>
+            <div>
+              <select name="lang" id="lang" class="border-0 ms-2">
+                <option value="eng">ENG</option>
+                <option value="frn">FRC</option>
+              </select>
+            </div>
+            <div>
+              <a href="/login.html">
+                <button class="btn_outline ms-2">Log in</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar ends -->
+
+    <section class="dash py-md-5">
+      <div class="container">
+        <div
+          class="d-flex font_normal justify-content-center d-md-none dashboard_mobile"
+        >
+          <a
+            class="text-decoration-none me-3 profile_link_mobile black-text-4"
+            onclick="toggleContent_1()"
+            id="profile_link_mobile"
+            >Profile</a
+          >
+
+          <a
+            class="text-decoration-none billing_link_mobile black-text-4"
+            onclick="toggleContent_2()"
+            id="billing_link_mobile"
+            >Billing</a
+          >
+        </div>
+        <div
+          class="d-md-flex flex-md-row pb-5 d-flex flex-column"
+          id="dashboard"
+        >
+          <!-- Left side of the dashboard -->
+          <div
+            class="d-md-flex flex-md-column text-md-center d-flex left_aside"
+          >
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+            >
+              <div class="profile_image">
+                <img
+                  src="img/dashboard_profile.png"
+                  alt="dashboard profile image"
+                />
+              </div>
+              <h4>Hassanat Jubril</h4>
+              <p>
+                Uniquely created for businesses who prefer their employees to
+                represent them and infuse their experience
+              </p>
+              <div class="d-flex mx-auto">
+                <a href="#"
+                  ><img
+                    src="img/dark_twitter_icon.png"
+                    alt="icon for dashboard social twitter"
+                /></a>
+                <a href="#" class="mx-4">
+                  <img
+                    src="img/dark_fb_icon.png"
+                    alt="icon for dashboard social facebook"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="img/dark_linkedin_icon.png"
+                    alt="icon for dashboard social linkedin"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Right side of the dashboard -->
+          <div class="right_aside m-md-5 pt-md-5">
+            <div class="d-flex font_medium d-none d-lg-block">
+              <a
+                href="#"
+                class="text-decoration-none black-text-4"
+                onclick="toggleContent_1()"
+                id="profile_link"
+                >Profile</a
+              >
+
+              <a
+                href="#"
+                class="text-decoration-none ms-3 black-text-4"
+                onclick="toggleContent_2()"
+                id="billing_link"
+                >Billing</a
+              >
+            </div>
+            <!-- Profile Form-->
+            <div id="content_1" style="display: none">
+              <div class="py-3">
+                <h6>Profile</h6>
+                <p>Update your photo and personal details here</p>
+                <!-- profile form -->
+                <form class="row g-3 small">
+                  <div class="col-md-6">
+                    <label for="firstName" class="form-label"
+                      >First Name<span class="required_text font_normal"
+                        >*</span
+                      ></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-sm"
+                      id="firstName"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="lastName" class="form-label"
+                      >Last Name<span class="required_text font_normal"
+                        >*</span
+                      ></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-sm"
+                      id="lastName"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label"
+                      >Email<span class="required_text font_normal"
+                        >*</span
+                      ></label
+                    >
+                    <input
+                      type="email"
+                      class="form-control form-control-sm"
+                      id="email"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="phonenumber" class="form-label"
+                      >Phone Number(Telegram enabled)<span
+                        class="required_text font_normal"
+                        >*</span
+                      ></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-sm"
+                      id="phonenumber"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="organization" class="form-label"
+                      >Organization<span class="required_text font_normal"
+                        >*</span
+                      ></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-sm"
+                      id="organization"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="position" class="form-label"
+                      >Position Held<span class="required_text font_normal"
+                        >*</span
+                      ></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-sm"
+                      id="position"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="password" class="form-label"
+                      >Password<span class="required_text font_normal"
+                        >*</span
+                      ></label
+                    >
+                    <input
+                      type="password"
+                      class="form-control form-control-sm"
+                      id="password"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- Billing tab -->
+
+            <div id="content_2" style="display: none">
+              <div class="billing px-3 py-4 small mt-5">
+                <div
+                  class="d-lg-flex justify-content-lg-between align-items-center py-3 border-bottom border-1"
+                >
+                  <div>
+                    <div class="d-flex align-items-center m-0">
+                      <h6>Full Access plan</h6>
+                      <button class="ms-2 text-muted rounded-pill small px-2">
+                        inactive
+                      </button>
+                    </div>
+                    <p class="small m-0">
+                      Plan for enhanced features in customer experience journey
+                    </p>
+                    <p class="my-3">
+                      Next billing date <span>---- --, ----</span>
+                    </p>
+                  </div>
+                  <div class="">
+                    <div class="text-lg-end mt-3">
+                      <a href="/dashboard_active.html"
+                        ><button class="btn btn_outline">
+                          Upgrade Plan
+                        </button></a
+                      >
+                    </div>
+                    <a href="#" class="text-decoration-none small text-body"
+                      >Do you want to sponsor someone?</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Payment method change -->
+                <div>
+                  <h6 class="mt-3">Payment method</h6>
+                  <p class="small">Change how you pay for your plan</p>
+                  <div>
+                    <div
+                      class="d-lg-flex justify-content-between align-items-start"
+                    >
+                      <div>
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="img/paystack_icon.png"
+                            alt="paystack_icon"
+                            style="width: 15px; height: 15px"
+                          />
+                          <p class="small m-0 mx-2">Paystack</p>
+                          <button class="rounded-pill small px-2">
+                            Default
+                          </button>
+                        </div>
+                        <p class="my-0 ms-4 text-muted font-small">
+                          Expiry 07/2024
+                        </p>
+                      </div>
+
+                      <a href="#"
+                        ><button class="btn_primary mt-3">Edit</button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- profile form continue -->
+      <div class="container" id="form_continue">
+        <div class="d-flex row">
+          <div class="bio col-md-3">
+            <h5>Your Bio</h5>
+            <p>Write a short introduction</p>
+          </div>
+
+          <div class="col-md-4 ms-md-4 ps-md-4">
+            <textarea
+              class="form-control form-control-sm"
+              id="exampleFormControlTextarea1"
+              placeholder="Add a short bio"
+              style="height: 100px"
+              maxlength="500"
+            ></textarea>
+          </div>
+        </div>
+        <!-- Socials profile -->
+        <div class="d-flex row align-items-center mt-4">
+          <div class="socials col-md-3">
+            <h5>Socials</h5>
+            <p>Link your social accounts</p>
+          </div>
+
+          <div class="col ms-md-4 ps-md-4">
+            <label for="facebook" class="form-label small">Facebook</label>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control form-control-sm text-muted"
+                id="facebook"
+                placeholder="Facebook link"
+              />
+              <span class="input-group-text"
+                ><img src="img/fb_social.png" alt=""
+              /></span>
+            </div>
+          </div>
+          <div class="col">
+            <label for="linkedin" class="form-label small">Linkedin</label>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                id="linkedin"
+                placeholder="Linkedin link"
+              />
+              <span class="input-group-text"
+                ><img src="img/linkedin_socials.png" alt=""
+              /></span>
+            </div>
+          </div>
+          <div class="col">
+            <label for="twitter" class="form-label small">Twitter</label>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                id="twitter"
+                placeholder="Twitter link"
+              />
+              <span class="input-group-text"
+                ><img src="img/twitter_socials.png" alt=""
+              /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Billing History -->
+      <div class="container" id="billing_history" style="display: none">
+        <h5>Billing History</h5>
+        <p>See your previous plans and record</p>
+        <div class="d-flex flex-column text-center my-md-5">
+          <div class="m-auto">
+            <p class="small m-0">Billing history currently not available</p>
+            <p class="small m-0">Upgrade plan first</p>
+          </div>
+          <img
+            src="img/cart.png"
+            class="m-auto my-3"
+            style="width: 50px"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Starts -->
+    <footer style="background: #2a2a2a">
+      <div class="container pt-5 text-white">
+        <div class="row mt-5">
+          <div class="col-lg-4">
+            <img
+              src="assets/images/cx_logo.svg"
+              alt="CX community logo"
+              class="pb-3"
+            />
+            <p>
+              Every business success is measured by customer value and the
+              experience at every touch point from discovery to delivery.
+            </p>
+            <div class="d-flex">
+              <img
+                src="assets/icons/footer/Facebook.svg"
+                alt="facebook icon"
+                class="me-3"
+              />
+              <img
+                src="assets/icons/footer/Twitter.svg"
+                alt="twitter icon"
+                class="me-3"
+              />
+              <img
+                src="assets/icons/footer/Youtube.svg"
+                alt="youtube icon"
+                class="me-3"
+              />
+              <img
+                src="assets/icons/footer/Instagram.svg"
+                alt="instagram icon"
+                class="me-3"
+              />
+            </div>
+          </div>
+          <div class="col-lg-2 footer_nav">
+            <p class="fw-bold">Navigations</p>
+            <div class="d-flex flex-column">
+              <a href="" class="text-decoration-none text-white">About</a>
+              <a href="/pricing.html" class="text-decoration-none text-white"
+                >Pricing</a
+              >
+              <a href="" class="text-decoration-none text-white">Events</a>
+              <a href="" class="text-decoration-none text-white">Resources</a>
+            </div>
+          </div>
+          <div class="col-lg-3 more_links">
+            <p class="fw-bold">More Links</p>
+            <div class="d-flex flex-column">
+              <a href="" class="text-decoration-none text-white"
+                >Join Community</a
+              >
+              <a href="" class="text-decoration-none text-white">FAQs</a>
+              <a href="" class="text-decoration-none text-white"
+                >Privacy Policy</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 contacts">
+            <p class="fw-bold">Contacts</p>
+            <div class="d-flex flex-column">
+              <a href="" class="text-decoration-none text-white"
+                >Block 5, Admiralty way, Lekki Phase 1, Lagos, Nigeria</a
+              >
+              <a href="" class="text-decoration-none text-white"
+                >+234 706 4879 348</a
+              >
+              <a href="" class="text-decoration-none text-white"
+                >cxcommunityafrica@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+        <p class="text-center m-0 py-3" style="font-size: 16px">
+          2023 © All rights reserved by CX Community Africa
+        </p>
+      </div>
+    </footer>
+    <!-- Footer ends -->
+  </body>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/fontawesome.min.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</html>
