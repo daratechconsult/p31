@@ -171,6 +171,18 @@ select{
   font-weight: 600;
 }
 
+.africa{
+  align-items: center;
+  justify-content: space-between;
+}
+.better_africa{
+  width: 50%;
+}
+.better_africa_text{
+  width: 40%;
+}
+
+
 .about_heading_text {
   border-left: 3px solid #7933b1;
 }
@@ -361,6 +373,10 @@ color: #555555;
   .community_heading_text:after {
     width: 10%;
   }
+
+  .better_africa, .better_africa_text{
+    width: 100%;
+  }
   .better_africa {
     display: flex;
     justify-content: center;
@@ -427,6 +443,9 @@ color: #555555;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .better_africa, .better_africa_text{
+    width: 100%;
   }
   .better_africa img{
     width: 80%;
