@@ -64,8 +64,11 @@
 
       <div></div>
       <div class="d-flex alert-text">
-        <p class='alert_p'>Join Us at Our Monthly Meet Up starting April 23-28, 2023</p>
-        <button class="btn_primary mx-3"><a href="#">Register</a></button>
+        <div>
+          <p class='alert_p my-auto'>Join Us at Our Monthly Meet Up starting April 23-28, 2023</p>
+        </div>
+        
+        <button class="btn_primary mx-3"><a class="text-decoration-none text-white" href="#">Register</a></button>
       </div>   
 
       <button
@@ -156,19 +159,19 @@
                       <div class="box t1">
                         <h1>Unlocking the power of customer experience<br />
                         for your business success</h1>
-                        <p>Every business success is measured by Customer value and the<br />
+                        <p>Every business success is measured by Customer value and the
                         experience at every touch point from discovery to delivery.</p>
                       </div>
                       <div class="box t2">
                         <h1>Delivering Unforgettable Experiences<br />
                           Through CX Excellence</h1>
-                        <p>Every business success is measured by Customer value and the<br />
+                        <p>Every business success is measured by Customer value and the
                         experience at every touch point from discovery to delivery.</p>
                       </div>
                       <div class="box t3">
                           <h1>Elevate Your Customer Experience<br />
                             to new heights</h1>
-                          <p>Every business success is measured by Customer value and the<br />
+                          <p>Every business success is measured by Customer value and the
                           experience at every touch point from discovery to delivery.</p>
                           
                       </div>   
@@ -298,7 +301,7 @@
           Our Community Goals
         </h2>
         <div class="d-flex goal-box d-none d-md-flex">
-          <div class="d-flex goal-card">
+          <div class="d-flex goal-card gc">
             <img
               src="img/G1.png"
               alt="logo for number 1"
@@ -309,7 +312,7 @@
               Building people in business or professionals in any industry to lead customer-centric ways
             </p>
           </div>
-          <div class="d-flex goal-card">
+          <div class="d-flex goal-card gc">
             <img
               src="img/G2.png"
               alt="logo for number 1"
@@ -320,7 +323,7 @@
               Filling the knowledge gap by equipping members with resources
             </p>
           </div>
-          <div class="d-flex goal-card">
+          <div class="d-flex goal-card gc">
             <img
               src="img/G3.png"
               alt="logo for number 1"
@@ -331,7 +334,7 @@
               Solid connections and networking with other professionals and businesses across Africa 
             </p>
           </div>
-          <div class="d-flex goal-card">
+          <div class="d-flex goal-card gc">
             <img
               src="img/G4.png"
               alt="logo for number 1"
@@ -342,7 +345,7 @@
               Keep members informed and updated on all things concerning CX
             </p>
           </div>
-          <div class="d-flex goal-card">
+          <div class="d-flex goal-card gc">
             <img
               src="img/G5.png"
               alt="logo for number 1"
@@ -574,7 +577,7 @@
               alt=" image counting down to an event"
             />
           </div>
-          <div class="col-md-6 d-flex">
+          <div class="col-md-6 d-flex up-guest">
             <img
               src="img/speaker_frame.png"
               class="speaker_image"
@@ -1016,14 +1019,14 @@
             role="button"
             class="carousel-control-prev position-relative"
             data-bs-slide="prev"
-            ><img src="img/carousel_left_button.png" alt="arrow showing left"
+            ><img class="c_btn" src="img/carousel_left_button.png" alt="arrow showing left"
           /></a>
           <a
             href="#carouselExampleControls"
             role="button"
             class="carousel-control-next position-relative"
             data-bs-slide="next"
-            ><img src="img/carousel_right_button.png" alt="arrow showing right"
+            ><img class="c_btn" src="img/carousel_right_button.png" alt="arrow showing right"
           /></a>
         </div>
         <!-- Inner  -->
@@ -1034,13 +1037,13 @@
 
     <!-- Mailinglist section starts -->
     <div class="text-center mx-auto mailing_list">
-      <div class="mx-auto p-5">
+      <div class="mx-auto px-3 pt-3 px-md-5 py-md-5">
         <h5 class="head_5" style="color: #652b93">Join Our Mailing List</h5>
         <p class="mailing_desc font_medium mx-auto my-4 black-text-4">
           Subscribe to be the first one to know about updates, special
           promotions, sales and more.
         </p>
-        <div class="mailing_input d-flex mx-auto my-md-3">
+        <div class="mailing_input mb-3 d-flex mx-auto my-md-3">
           <input
             type="text"
             class="form-control"
@@ -1056,11 +1059,10 @@
           aria-describedby="basic-addon2"
         />
         </div>
-        <a href="#"
-        ><button class="input-group-text text-center btn_primary mb-3" id="basic-addon2">
-          Subscribe
-        </button></a
-      >
+        <button class="btn_primary mb-3 ">
+          <a class="text-decoration-none text-white" href="">Subscribe</a>
+        </button>
+      
       <p>By subscribing you agree with our <span>Privacy Policy</span>  and provide consent to receive updates from our company.</p>
       </div>
     </div>
@@ -1068,7 +1070,7 @@
 
     <!-- Footer Starts -->
     <footer style="background: #2a2a2a" class="footer position-relative pt-2 z-n1">
-      <div class="container pt-5 text-white">
+      <div class="container pt-lg-5 text-white">
         <div class="row mt-5">
           <div class="col-lg-4">
             <img
@@ -1110,7 +1112,7 @@
                 >About</a
               >
               <a
-                href="/pricing.html"
+                href=""
                 class="text-decoration-none text-white font_small"
                 >Pricing</a
               >
