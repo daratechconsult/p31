@@ -331,7 +331,7 @@ color: #555555;
 
   .hero-section a{
     padding: 16px 24px;
-    top: 50%;
+    top: 70%;
   }
   
   .box p{
@@ -484,7 +484,6 @@ color: #555555;
     height: 25px;
   }
 
-
   .events p{
     font-size: 14px;
   }
@@ -517,23 +516,28 @@ color: #555555;
     line-height: 0px;
     margin-bottom: 5px;
   }
+
   .speaker_details img{
     height: 14px;
     margin-right: 8px !important;
   }
+
   .speaker_details button{
     padding: 8px 20px;
     font-size: 12px;
     margin-top: -20px;
   }
+
   .testimonial{
     width: 100%;
   }
+
   .test-desc{
     font-size: 12px;
     width: 80%;
     margin: 0;
   }
+
   .card-body p{
     font-size: 12px;
   }
@@ -643,8 +647,8 @@ color: #555555;
   }
 
   .c_btn{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 
   /* Footer mobile */
