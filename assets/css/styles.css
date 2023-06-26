@@ -85,8 +85,9 @@ body{
   align-items: center;
 }
 
+
 .abt-img{
-  width: 544px;
+  width: 500px;
   height: 343px;
 }
 
@@ -184,6 +185,7 @@ select{
 .better_africa_text{
   width: 40%;
 }
+
 
 .about_heading_text {
   border-left: 3px solid #7933b1;
@@ -361,7 +363,7 @@ color: #555555;
 
 
 /* Media query for mobile screen */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
 
   .alert-dismissible .btn-close{
     right: 1rem;
@@ -420,9 +422,9 @@ color: #555555;
   .content{
     position: absolute;
     width: 80%;
-    top: 80%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 100%);
+    transform: translate(-50%, 80%);
     color: #ffffff;
   }
 
@@ -475,6 +477,31 @@ color: #555555;
   .more_links,
   .contacts {
     padding-top: 1.5rem;
+  }
+}
+@media screen and (max-width:600px) {
+  .hero-section{
+    height: 100vh;
+  }
+  
+  .content{
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  .upcoming .row{
+    flex-direction: column !important;
+  }
+  .up-img, .up-guest{
+    width: 100%;
+  }
+  .up-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
