@@ -132,6 +132,9 @@
   margin: 0 10px;
 }
 
+.btn2 button{
+	margin-left: 0rem;
+}
 
 .navbar-nav  li::after{
 content:'';
@@ -749,14 +752,14 @@ margin:5px;
 }
 @media screen and (max-width: 375px) {
 	.about-hero-img img{
-		width: 100%;
+		width: 105%;
 		height: 48vh;
 		margin-top: 20px;
 	}
 }
 @media screen and (max-width: 360px) {
 	.about-hero-img img{
-		width: 100%;
+		width: 110%;
 		height: 40vh;
 		margin-top: 20px;
 	}

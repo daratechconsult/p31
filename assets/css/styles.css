@@ -18,6 +18,14 @@ body{
   width: 100%;
   margin: 0;
 }
+footer .dark-icon {
+  display: none !important;
+}
+
+
+.ct-dark {
+  display: none !important;
+}
 
 .alert-dismissible .btn-close{
  right: 5rem;
@@ -267,7 +275,7 @@ select{
   gap: 1rem;
   width: 350px;
   height: 225px;
-  background: #FFFFFF;
+  /* background: #FFFFFF; */
   border-radius: 16px;
   padding:16px 40px;
 }
@@ -360,6 +368,49 @@ color: #555555;
   stroke: var(--clr);
   stroke-dasharray: 440;
 }
+.upcoming{
+  background-color: #fbf7ff;
+}
+
+footer a {
+  color: #fff !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Media query for mobile screen */
@@ -829,9 +880,84 @@ footer {
   --navbar-color: #cccccc;
   --alert-bg-color: #ead6ef;
 }
-h6{
-  color: #171717;
+
+
+/* DARK MODE */
+.dark-mode .hero-section a {
+  color: #fff;
 }
-.card-body p{
-  color: #171717;
+.dark-mode .navbar a {
+  color: #fff;
+}
+.dark-mode .navbar select {
+  background-color: transparent;
+}
+.dark-mode .container-fluid p{
+  color: #D0D0D0;
+}
+.dark-mode .form1s input::placeholder{
+  color: #D0D0D0;
+}
+.dark-mode p {
+  color: #D0D0D0;
+}
+.dark-mode .goal-card h6 {
+  color: #D0D0D0 !important;
+}
+.dark-mode .goal-carousel-card h6 {
+  color: #171717 !important;
+}
+.dark-mode .goal-carousel-card p {
+  color: #171717 !important;
+}
+.dark-mode .card-body p {
+  color: #171717 !important;
+}
+
+.dark-mode .upcoming {
+  background-color: #171717;
+  color: #FFFFFF !important;
+}
+.dark-mode .upcoming h5{
+  color: #FFFFFF !important;
+}
+
+.dark-mode .upcoming button {
+  background-color: #171717;
+}
+
+.dark-mode .alert {
+  background-color: #E4D6EF;
+}
+.dark-mode .alert_p {
+  background-color: #E4D6EF;
+  color: #2A2A2A !important;
+}
+.dark-mode .mailing_list{
+  background-color: #2A2A2A;
+}
+.dark-mode .mailing_list input{
+  background-color: #2A2A2A;
+}
+.dark-mode .mailing_list input::placeholder{
+  color: #E4D6EF;
+}
+.dark-mode footer{
+  background-color: #E4D6EF !important;
+  color: #0D0D0D !important;
+}
+.dark-mode footer .light-icon{
+  display: none !important;
+}
+.dark-mode footer .dark-icon{
+  display: block !important;
+}
+.dark-mode .ct-light{
+  display: none !important;
+}
+.dark-mode .ct-dark{
+  display: block !important;
+}
+.dark-mode footer p, .dark-mode footer h6, .dark-mode footer a{
+  color: #0D0D0D !important;
 }

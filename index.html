@@ -82,7 +82,7 @@
 
 
     <!-- Navbar starts -->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="/">
           <img src="assets/images/cx_logo.svg" alt="CX Community Logo" />
@@ -350,7 +350,7 @@
 
     <div id="carouselExampleCaptions" class="carousel slide goal-carousel d-md-none">
 
-        <div class="carousel-inner ">
+        <div class="carousel-inner">
             <!-- 1 -->
             <div class="carousel-item active">
               <div class="d-flex goal-carousel-card gc">
@@ -518,7 +518,7 @@
     </div>
 
 
-    <section style="background-color: #fbf7ff" class="upcoming">
+    <section class="upcoming">
       <div class="container py-4">
         <div class="row">
           <div class="col-md-6 up-img">
@@ -528,49 +528,14 @@
             <h5 class="fw-bolder black-text-6 up-topic">
               Topic: Voice of the Customer 2023
             </h5>
-            <!-- <div id="time">
-              <div class="circle" style="--clr:#E62C29">
-                <div class="dots day_dot">
-                  <svg>
-                    <circle cx="70" cy="'70" r="70"></circle>
-                    <circle cx="70" cy="'70" r="70" id="dd"></circle>
-                    
-                  </svg>
-                  <div id="days">00</div>
-                </div>
-              </div>
-              <div class="circle" style="--clr:#31AC59">
-                <div class="dots hour_dot">
-                  <svg>
-                    <circle cx="70" cy="'70" r="70"></circle>
-                    <circle cx="70" cy="'70" r="70" id="hh"></circle>
-                    
-                  </svg>
-                  <div id="hour">00</div>
-                </div>
-              </div>
-              <div class="circle" style="--clr:#F4981F">
-                <div class="dots min_dot">
-                  <svg>
-                    <circle cx="70" cy="'70" r="70"></circle>
-                    <circle cx="70" cy="'70" r="70" id="mm"></circle>
-                    
-                  </svg>
-                  <div id="min">00</div>
-                </div>
-              </div>
-              
-              <div class="dots day_dot">
-                <svg>
-                  <circle cx="70" cy="'70" r="70"></circle>
-                  <circle cx="70" cy="'70" r="70"></circle>
-                  <div id="days">00</div>
-                </svg>
-              </div>
-            </div> -->
             <img
               src="img/countdown.png"
-              class="w-50 py-4 "
+              class="w-50 py-4 ct-light"
+              alt=" image counting down to an event"
+            />
+            <img
+              src="img/countdowndark.png"
+              class="w-50 py-4 ct-dark"
               alt=" image counting down to an event"
             />
           </div>
@@ -628,7 +593,7 @@
     <!-- Event section ends -->
 
     <!-- Clients Testimonial starts -->
-    <div class="container testimonial">
+    <div class="container testimonial d-lg-none">
       <h2 class="text-center community_heading_text">
         Here’s what our clients say
       </h2>
@@ -1079,7 +1044,8 @@
               Every business success is measured by customer value and the
               experience at every touch point from discovery to delivery.
             </p>
-            <div class="d-flex">
+            <!-- Light mode icon -->
+            <div class="d-flex light-icon">
               <img
                 src="assets/icons/footer/Facebook.svg"
                 alt="facebook icon"
@@ -1101,22 +1067,48 @@
                 class="me-3"
               />
             </div>
+
+            <!-- Dark mode icon -->
+            <div class="d-flex dark-icon">
+              <img
+                src="assets/icons/footer/Vectorfb.png"
+                alt="facebook icon"
+                class="me-3"
+              />
+              <img
+                src="assets/icons/footer/Vectortw.png"
+                alt="twitter icon"
+                class="me-3"
+              />
+              <img
+                src="assets/icons/footer/Vectoryt.png"
+                alt="youtube icon"
+                class="me-3"
+              />
+              <img
+                src="assets/icons/footer/Vectorig.png"
+                alt="instagram icon"
+                class="me-3"
+              />
+            </div>
+
+
           </div>
           <div class="col-lg-2 footer_nav d-none">
             <h6 class="head_6">Navigations</h6>
             <div class="d-flex flex-column">
-              <a href="about_us.html" class="text-decoration-none text-white font_small"
+              <a href="about_us.html" class="text-decoration-none  font_small"
                 >About</a
               >
               <a
                 href=""
-                class="text-decoration-none text-white font_small"
+                class="text-decoration-none  font_small"
                 >Pricing</a
               >
-              <a href="" class="text-decoration-none text-white font_small"
+              <a href="" class="text-decoration-none  font_small"
                 >Events</a
               >
-              <a href="" class="text-decoration-none text-white font_small"
+              <a href="" class="text-decoration-none  font_small"
                 >Resources</a
               >
             </div>
@@ -1125,13 +1117,13 @@
             <h6 class="head_6">More Links</h6>
             <div class="d-flex flex-column">
               <a  href="https://docs.google.com/forms/d/e/1FAIpQLScabdC5nGpSFXp1VBcOEnrTDhSIqY3i9Zp3y3VewhygCQ7YhA/viewform?usp=send_form
-              " target=”_blank” class="text-decoration-none text-white font_small"
+              " target=”_blank” class="text-decoration-none  font_small"
                 >Join Community</a
               >
-              <a href="" class="text-decoration-none text-white font_small"
+              <a href="" class="text-decoration-none  font_small"
                 >FAQs</a
               >
-              <a href="" class="text-decoration-none text-white font_small"
+              <a href="" class="text-decoration-none  font_small"
                 >Privacy Policy</a
               >
             </div>
@@ -1139,13 +1131,13 @@
           <div class="col-lg-3 contacts">
             <h6 class="head_6">Contacts</h6>
             <div class="d-flex flex-column">
-              <a href="" class="text-decoration-none text-white font_small"
+              <a href="" class="text-decoration-none  font_small"
                 >Block 5, Admiralty way, Lekki Phase 1, Lagos, Nigeria</a
               >
-              <a href="" class="text-decoration-none text-white font_small"
+              <a href="" class="text-decoration-none  font_small"
                 >+234 706 4879 348</a
               >
-              <a href="" class="text-decoration-none text-white font_small"
+              <a href="" class="text-decoration-none  font_small"
                 >cxcommunityafrica@gmail.com</a
               >
             </div>
