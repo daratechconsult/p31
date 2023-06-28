@@ -532,6 +532,7 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
+
   .navbar-brand{
     margin-bottom: 1rem;
   }
@@ -825,6 +826,9 @@ footer a {
   .contacts {
     padding-top: 1.5rem;
   }
+      	.better_africa img {
+      	  height: 45vh;
+      	}
 }
 
 
@@ -960,4 +964,10 @@ footer {
 }
 .dark-mode footer p, .dark-mode footer h6, .dark-mode footer a{
   color: #0D0D0D !important;
+}
+
+@media screen and (max-width: 768px) {
+    .dark-mode .navbar a {
+        color: #171717;
+      }
 }
