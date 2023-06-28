@@ -801,7 +801,6 @@ color: #555555;
   --primary-color: #121212;
   --bg-color: #ffffff;
   --text-color: #343a40;
-
   --navbar-color: #555555;
   --alert-bg-color: #f7eeff;
 }
@@ -821,6 +820,7 @@ footer {
   background-color: var(--footer-bg-color);
   color: var(--bg-color);
 }
+
 .dark-mode {
   --primary-color: #ffffff;
   --bg-color: #171717;
@@ -828,4 +828,10 @@ footer {
   --footer-bg-color: #e4d6ef;
   --navbar-color: #cccccc;
   --alert-bg-color: #ead6ef;
+}
+h6{
+  color: #171717;
+}
+.card-body p{
+  color: #171717;
 }
