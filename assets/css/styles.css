@@ -558,7 +558,7 @@ color: #555555;
 
   .x-toggler{
     position: absolute;
-    top:10px;
+    top:30px;
     right: 4rem;
   }
   .x-toggler img{
@@ -669,6 +669,14 @@ color: #555555;
 
 /* CSS for dark mode */
 @media only screen and (max-width: 375px) {
+    .x-toggler {
+        position: absolute;
+        top: 15px;
+        right: 4rem;
+      }
+    .navbar-brand {
+        margin-bottom: 0.5rem;
+      }
   .hero-section a {
       padding: 16px 24px;
       top: 70%;
