@@ -80,74 +80,63 @@
     </div>
     <!-- Alert ends -->
 
+
+
     <!-- Navbar starts -->
-    <nav class="navbar navbar-expand-lg  bg-white z-3" data-bs-theme="dark">
+
+    <nav class="navbar navbar-expand-lg bg-light">
       <div class="container">
         <a class="navbar-brand" href="/">
           <img src="assets/images/cx_logo.svg" alt="CX Community Logo" />
         </a>
-        <button
-          class="navbar-toggler border-0"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler my-auto" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class=""><img src="img/menu_icon.png" alt="" /></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item bg-white">
+            <li class="nav-item ">
               <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
-            <li class="nav-item bg-white">
+            <li class="nav-item">
               <a class="nav-link" href="about_us.html">About</a>
             </li>
-            <li class="nav-item bg-white">
-              <a class="nav-link" href="#">Pricing</a>
+            <li class="nav-item d-none">
+              <a class="nav-link" href="/pricing.html">Pricing</a>
             </li>
-            <li class="nav-item bg-white">
+            <li class="nav-item d-none">
+              <a class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#">P31</a>
             </li>
-            <li class="nav-item bg-white">
+            <li class="nav-item d-none">
               <a class="nav-link" href="#">Resources</a>
             </li>
           </ul>
-          <div class="x-toggler d-md-none d-block">
-            <img
-              src="assets/images/light_mode_toggle.svg"
-              id="light_mode_toggle"
-              alt="icon for light mode"
-            />
-          </div>
-          <div
-            class="d-md-flex flex-md-row align-items-md-center d-flex flex-column bg-white d-none d-md-block"
-          >
-            <div class="toggler">
-              <img
-                src="assets/images/light_mode_toggle.svg"
-                id="light_mode_toggle"
-                alt="icon for light mode"
-              />
+
+
+
+          <div class="d-md-flex flex-md-row align-items-md-center d-flex flex-column">
+
+            <div class="toggler x-toggler">
+              <img src="assets/images/light_mode_toggle.svg" id="light_mode_toggle" alt="icon for light mode" />
             </div>
-            <div class="d-none d-md-block">
+            <div class="d-none d-lg-block">
               <select name="lang" id="lang" class="border-0 ms-2">
                 <option value="eng">ENG</option>
                 <option value="frn">FRC</option>
               </select>
             </div>
-            <div>
+            <div class="d-none">
               <a href="/login.html">
-                <button class="btn_outline ms-2 ">Login</button></a
-              >
+                <button class="btn_outline ms-2">Log in</button></a>
             </div>
           </div>
         </div>
       </div>
     </nav>
-    <!-- Navbar ends -->
 
     <!-- About banner starts -->
     <div class="aboutban d-flex">
@@ -490,7 +479,7 @@ Access to hybrid events </b><font color="#DDDDDD">hosted by the community for ne
                 />
               </div>
             </div>
-            <div class="col-lg-2 footer_nav">
+            <div class="col-lg-2 footer_nav d-none">
               <h6 class="head_6">Navigations</h6>
               <div class="d-flex flex-column">
                 <a href="about_us.html" class="text-decoration-none text-white font_small"
@@ -548,7 +537,7 @@ Access to hybrid events </b><font color="#DDDDDD">hosted by the community for ne
 
 
 		<script>
-			function changemeo() {
+			function changemode() {
 			var footer = document.footer;
 			
 			footer.classList.toggle("footer2");
@@ -561,9 +550,6 @@ Access to hybrid events </b><font color="#DDDDDD">hosted by the community for ne
 				buttono.src == "assets/images/dark_mode_toggle.svg "
 				}
 			
-		
-			
-			
 		}		  
 		</script>
 
@@ -571,6 +557,7 @@ Access to hybrid events </b><font color="#DDDDDD">hosted by the community for ne
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/fontawesome.min.js"></script>
     <script src="assets/js/pricing.js"></script>
+      <script src="assets/js/main.js"></script>
   </body>
 
 </html>

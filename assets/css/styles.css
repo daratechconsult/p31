@@ -27,7 +27,6 @@ body{
 .navbar{
   padding: 0 5rem 0 6rem;
   height: 5.5rem;
-  overflow-x: hidden;
   width: 100%;
   z-index: 999;
 }
@@ -480,6 +479,18 @@ color: #555555;
     padding-top: 1.5rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .navbar-brand{
+    margin-bottom: 1rem;
+  }
+  .nav-item{
+    background-color: white;
+    padding: 10px 0;
+  }
+}
+
+
 @media screen and (max-width:600px) {
   .hero-section{
     height: 70vh;
@@ -507,6 +518,10 @@ color: #555555;
 }
 
 @media screen and (max-width: 425px) {
+  .hero-section {
+      height: 90vh;
+    }
+  
   .abt-img{
     width: 100%;
     height: 250px;
@@ -632,6 +647,9 @@ color: #555555;
 }
 
 @media screen and (max-width: 414px) {
+    .hero-section {
+        height: 70vh;
+      }
   .better_africa img{
     width: 80%;
     height: 35vh;
@@ -651,6 +669,13 @@ color: #555555;
 
 /* CSS for dark mode */
 @media only screen and (max-width: 375px) {
+  .hero-section a {
+      padding: 16px 24px;
+      top: 70%;
+    }
+  .hero-section {
+    height: 90vh;
+  }
 
   .navbar{
     padding: 0 .5rem;
@@ -753,6 +778,12 @@ color: #555555;
 	.better_africa img{
     height: 40vh;
 	}
+    .content {
+      width: 90%;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+    }
 }
 
 
