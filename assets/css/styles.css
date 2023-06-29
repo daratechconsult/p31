@@ -323,6 +323,9 @@ select{
   width: 100%;
   text-align: center;
 }
+.mailing_list h5{
+  font-weight: 700;
+}
 .mailing_list p{
   font-weight: 400;
   font-size: 12px;
