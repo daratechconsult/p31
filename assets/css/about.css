@@ -769,6 +769,7 @@ margin:5px;
 		margin-top: 20px;
 	}
 }
+
 @media screen and (max-width: 360px) {
 	.about-hero-img img{
 		width: 110%;
